@@ -1,42 +1,44 @@
 import React,{useState,useEffect} from "react";
-import {fetchDailyData} from '../../api'
 import {Line,Bar} from 'react-chartjs-2'; 
 
 import styles from './Chart.module.css'
+import rc from'randomcolor'
+import 'chartjs-plugin-datalabels';
 
-// const [dailyData, setDailyData] = useState([]);
-    
-
-
-//         const fetchAPI = async() =>{
-//             setDailyData(await fetchDailyData());
-//         }
-
-//         console.log(dailyData);
-//         fetchAPI();
-   
-
-
-const Chart = ({data,company }) =>{
-    // useEffect(()=>{ },[]);
-    console.log(data.latestPrice)
-    const barChart = (
-        data.latestPrice ? (
+const Chart = ({data,company,bgc }) =>{
+    const latestPrice = data.map(index=>index.latestPrice)
+    const companyNames = data.map(index=>index.symbol)
+    console.log(companyNames)
+    // var i;
+    // const bgc = []
+    // for (i = 0; i < latestPrice.length; i++) {
+    // bgc.push(rc({
+    //     hue: 'random',
+    //     luminosity: 'bright'
+    //  }))
+    // }
+        const barChart = (
+        latestPrice.length ? (
             <Bar
                 data={{
-                    labels: ['latestPrice'],
+                    labels: companyNames,
                     datasets: [{
                         label: 'price',
-                        backgroundColor: [
-                            'rgba(0, 0, 255, 0.7)',
-                        ],
-                        data: [data.latestPrice],
+                        backgroundColor: bgc,
+                        data: latestPrice,
                     }]
                 }}
                 options={{
                     legend: {display: false},
-                    title: {display: true, text: `CurrentState in ${company}`},
+                    title: {display: true, text: `Live Stock Price`},
+                    plugins: {
+                        datalabels: {
+                           display: true,
+                           color: 'white'
+                        }
+                     }
                 }}
+                
             />
         ) : null
     );

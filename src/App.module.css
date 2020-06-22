@@ -1,7 +1,11 @@
-body{
-    background-color: rgb(250,250,250);
+.main{
+    background-color: rgb(253,253,253);
 }
 
+.cardsContainer{
+    display:inline;
+    justify-content: center;
+}
 .container{
     display: flex;
     align-items: center;

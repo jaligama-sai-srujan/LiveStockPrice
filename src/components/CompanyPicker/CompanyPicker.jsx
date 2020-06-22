@@ -15,8 +15,8 @@ const CompanyPicker = ({handleCompanyChange}) =>{
     return (
         <FormControl>
             <NativeSelect defaultValue="" onChange={(e) => {handleCompanyChange(e.target.value)}}>
-                <option value="aapl"> AAPL  </option>
-    {fetchedCompany.map((company,i) => <option key={i} value={company}>{company}</option>)}
+                <option >   </option>
+                {fetchedCompany.map((company,i) => <option key={i} value={company}>{company}</option>)}
             </NativeSelect>
         </FormControl>
     )
