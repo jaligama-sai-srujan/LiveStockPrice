@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/LiveStockPrice/static/css/main.9157ef8e.chunk.css",
+    "main.js": "/LiveStockPrice/static/js/main.096ffb58.chunk.js",
+    "main.js.map": "/LiveStockPrice/static/js/main.096ffb58.chunk.js.map",
+    "runtime-main.js": "/LiveStockPrice/static/js/runtime-main.611df521.js",
+    "runtime-main.js.map": "/LiveStockPrice/static/js/runtime-main.611df521.js.map",
+    "static/js/2.2e587820.chunk.js": "/LiveStockPrice/static/js/2.2e587820.chunk.js",
+    "static/js/2.2e587820.chunk.js.map": "/LiveStockPrice/static/js/2.2e587820.chunk.js.map",
+    "index.html": "/LiveStockPrice/index.html",
+    "precache-manifest.c408e197f18945b667e8f60c49b0c042.js": "/LiveStockPrice/precache-manifest.c408e197f18945b667e8f60c49b0c042.js",
+    "service-worker.js": "/LiveStockPrice/service-worker.js",
+    "static/css/main.9157ef8e.chunk.css.map": "/LiveStockPrice/static/css/main.9157ef8e.chunk.css.map",
+    "static/js/2.2e587820.chunk.js.LICENSE.txt": "/LiveStockPrice/static/js/2.2e587820.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.611df521.js",
+    "static/js/2.2e587820.chunk.js",
+    "static/css/main.9157ef8e.chunk.css",
+    "static/js/main.096ffb58.chunk.js"
+  ]
+}
